@@ -1,0 +1,129 @@
+<html> 
+	<head>
+		<link type="text/css" rel="stylesheet" href="main.css"/>
+
+		<title> Real Code.com </title> 
+		<script>
+			function banner(){ 
+				var text = confirm("Did you want to exist this beauty?"); 
+				return text; 
+				}
+		function answer(){
+			var radio = document.getElementsByName("trivia");
+			var selection = false;
+			var message = "Happy Holidays";
+
+			for( var i = 0; i < radio.length; i++) {
+				if(radio[i].value == "true" && radio[i].checked) {
+					selection = true;
+				} //end if statement
+			} //end for loop
+
+			if(selection == true) {
+				message = message + "<b><p style='color:green'> Ding ding ding! You got it right!</p></b>";
+			} else {
+				message = message + "<b> <p style='color:red'>Try again!</p></b>";
+			}
+			document.getElementById("response").innerHTML = message;
+
+		} //end function answer
+	</script>
+
+	</head> 
+
+	<body id="background"> 
+		
+		<a href="http://bing.com" onclick="return banner()">
+					<header id="header"> 
+			<center>Use Your <span class="wrap-text">Creativity!</span> U.Y.C.</center>
+			<nav>
+				<ul id="navmenu">
+					<li class="navitem"><a href="index.html">Home</a></li>
+					<li class="navitem"><a href="AboutMe.html">About Me</a></li>
+					<li class="navitem"><a href="AboutRealCode.html">About Real Code</a></li>
+					<li class="navitem"><a href="file:///C:/Users/C/Desktop/html%20and%20css/index/New%20folder/index.html">Comments</a></li>
+				</ul>
+			</nav>
+		</header>
+		</a>
+
+		<h1>
+		Learn how to create your own website!
+		</h1>
+
+		<div id="rightside">
+		<p class="paragraph"p>There are <b>many</b> steps to create your <u>customized website</u>, but Real Code makes it fun and easy.<br> Instead of typing code you could be playing our <i>Website Game</i>.
+		</p>
+
+		<audio width="400" height="220" controls>
+				<source src="http://www.w3schools.com/tags/horse.mp3"
+				type="audio/mpeg">
+			</audio>
+
+
+		<div class="wrap-list">
+		<ol>
+				
+			<li class="listitem">Create your title.</li>
+			<li class="listitem">Post your pictures.</li>
+			<li class="listitem">Write all about your business.</li>
+			<li class="listitem">Start making money!</li>
+			<li class="listitem">Have fun and enjoy your website!</li>
+
+		</ol>
+		</div>
+
+		</div>
+
+		<div id="leftside">
+
+
+		<h2>Coding Quiz!</h2>
+
+
+		<div class="wrap-trivia">
+		<p class="paragraph">Which text editor did I use for this website?</p>
+			<form>
+				<div id="response"></div>
+			<input type="radio" name="trivia" value="false">Notepad++<br>
+			<input type="radio" name="trivia" value="true">Visual Studio Code<br>
+			<input type="radio" name="trivia" value="false">Atom<br>
+			<input type="radio" name="trivia" value="false">Sublime<br>
+			<input type="button" value="Click Here" id="quizButton"
+			onclick="answer()">
+			</form>
+
+		</div>
+
+		</div>
+
+
+
+		<p class="paragraph"> Instead of using this:</p>
+			<img src="https://www.sublimetext.com/images/logo.svg" height="50"/>
+
+		<p class="paragraph">You can use this.</p>
+			<img src="https://www.besthosting.com/wp-content/uploads/2016/06/Wix-edited-site-1024x717.png" height="450"/>
+
+		 <hr>
+			
+			 <center>Sincerely, Andre</center>
+	
+			 <br>
+			<center>The Founder</center>
+			<br>
+			<iframe width="420" height="315" 
+			src="https://www.youtube.com/embed/ra3-yHqOyNM" 
+			frameborder="0" allowfullscreen>
+			</iframe>
+				<center><a href="http://pbskids.org/">My favorite website.</a>
+				</center>
+			
+
+		<footer id="footer">
+
+			This website was created by Andre Paulsen.
+		</footer>
+
+	</body> 
+</html>
